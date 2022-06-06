@@ -165,9 +165,9 @@ export class App extends React.Component {
             {/*
               If the user has no tokens, we don't show the Transfer form
             */}
-            {/* {this.state.balance.eq(0) && (
+            {this.state.balance.eq(0) && (
               <NoTokensMessage selectedAddress={this.state.selectedAddress} />
-            )} */}
+            )}
             {!(this.state.proposalId instanceof BigNumber) && (this.state.balance.gt(0)) && (
               <div>
                 <form>
