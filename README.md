@@ -1,6 +1,30 @@
-This project attempts to combine two github projects into a "proof of concept"
-project a decentralized autonomous organization (dao). Clone the repo onto 
-your machine, then instantiate 3 separate terminals:
+PicDaoWork is a project intended to be an exploration into the languages, tools,
+and ideas central to the Ethereum blockchain. Because Ethereum is the current leader
+in development for "Web3", gaining a better understanding of its concepts and
+toolings is crucial in order to better understand Web3. The main tools used in this
+project are as follows:
+
+1. Solidity: A smart contracts programming language
+2. Hardhat: An ethereum development environment for local deployment and testing.
+3. EthersJS: A javascript library for connecting deployed smart contracts with applications.
+4. Typescript/Javascript: Frontend, Testing, and Tasks
+
+
+The main goal of picDaoWork is to implement the smallest possible version of a Distributed
+Autonomous organization (DAO). Owners of the Dao's governance token can propose and vote
+on which picture to display on the picDaoWork website. The main contracts for this DAO
+are:
+
+1. Box: This contract stores the information of the pictures url. It is updated through
+governance.
+2. GovernerToken: An erc20 token that enables voting.
+3. Governer: A contract that allows proposing, queueing, and execution of proposals.
+4. Timelock: A contract that enforces time restrictions on who can vote, when, and
+when successful proposals go into effect.
+
+--------------------------------------------------------------------------------------------
+
+To get started, clone the repo onto your machine, then instantiate 3 separate terminals:
 
   Terminal 1: Project root directory
 
